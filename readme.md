@@ -2,9 +2,17 @@
 
 ## **Summary**
 
-This project has API endpoints for login, register, aqi_calculator data built in Angular 8 i.e. single page application with material design principals and Django Rest Framework with PostgreSQL.
+This project has following features:
 
-This application has validations for login, register as well as search and sort functionality for aqi_calculator data view along with a separate json data view for all aqi_calculator data.
+1. User Authentication & Authorization implemented with JWT -> Login/Sign up
+2. AQI Calculator -> AQI to Concentration Calulcations & Concentration to AQI Calulcations
+3. User Calulator History
+4. All AQI calculation data viewer in json format
+5. Cross device responsiveness
+
+This project has API endpoints for login, register, aqi calculator and api calculator data built in Angular 8 i.e. single page application with material design principles and Django Rest Framework with PostgreSQL.
+
+This application has validations for login, register as well as search and sort functionality for aqi calculator data view along with a separate json data view for all aqi_calculator data.
 
 This web application is completely responsive.
 
@@ -14,35 +22,37 @@ This web application is completely responsive.
 2. Angular 8,
 3. Django Rest Framework,
 4. PostgreSQL
-6. Docker
-7. Nginx
+5. Docker
+6. Nginx
+
+## AQI Calculation
+
+The project uses below formulas for calculation AQI and Pollutant Concentration:
+![](https://github.com/Tushh007/bookart-app/blob/master/screenshots/aqi_formulas.png)
+
+The project uses the AQI Breakpoint Table shown in the below image:
+![](https://github.com/Tushh007/bookart-app/blob/master/screenshots/aqi_breakpoint_table.png)
+
+source/reference: ![https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html](https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html)
 
 ## **Requirements for running the project in local machine:**
 
 1. Docker
 
-## **Running project on local machine:**
+## Development Environment
 
-1. ### **Running in Development environment**
-1. For running the project: docker-compose up -d –build
-1. For checking logs &amp; troubleshooting: docker-compose logs -f
-1. For closing project: docker-compose down -v
-1. For running commands in the local containers:
-1. docker-compose exec [container name] [command]
-1. docker-compose exec backend python manage.py createsuperuser
-1. docker-compose exec backend python manage.py makemigrations
-1. docker-compose exec backend python manage.py migrate
-1. ### **Running in Production environment:**
-1. For running the project: docker-compose -f docker-compose.prod.yml up -d --build
-1. For checking logs &amp; troubleshooting: docker-compose -f docker-compose.prod.yml logs -f
-1. For closing project: docker-compose -f docker-compose.prod.yml down -v
-1. For running commands in the local containers:
-1. docker-compose -f docker-compose exec [container name] [command]
-1. docker-compose -f docker-compose exec backend python manage.py createsuperuser
-1. docker-compose -f docker-compose exec backend python manage.py makemigrations
-1. docker-compose -f docker-compose exec exec backend python manage.py migrate
+### **Running in Development environment**
 
-## **Routes &amp; Endpoints | Development environment**
+1. Make sure that entrypoint.sh has line ending format of UNIX. if not please use sublime text / notepad++ and change the line endings to UNIX format and save the file.
+2. For running the project: docker-compose up -d -–build
+3. docker-compose exec backend python manage.py makemigrations
+4. docker-compose exec backend python manage.py migrate
+5. For accessing admin dashboard: docker-compose exec backend python manage.py createsuperuser
+6. For checking logs &amp; troubleshooting: docker-compose logs -f
+7. For closing project: docker-compose down -v
+8. For running commands in the local containers: docker-compose exec [container name] [command]
+
+### **Routes &amp; Endpoints | Development environment**
 
 1. Angular Frontend: localhost:4201
 2. Django Rest Framework Backend: localhost:8000
@@ -56,7 +66,20 @@ This web application is completely responsive.
 10. General Tab || Name: database
 11. Connection Tab || Host: database | username: app | password: app
 
-## **Routes &amp; Endpoints | Production environment**
+## Production Environment
+
+### **Running in Production environment:**
+
+1. Make sure that entrypoint.prod.sh has line ending format of UNIX. if not please use sublime text / notepad++ and change the line endings to UNIX format and save the file.
+2. For running the project: docker-compose -f docker-compose.prod.yml up -d --build
+3. docker-compose -f docker-compose exec backend python manage.py makemigrations
+4. docker-compose -f docker-compose exec exec backend python manage.py migrate
+5. For accessing admin dashboard: docker-compose -f docker-compose exec backend python manage.py createsuperuser
+6. For checking logs &amp; troubleshooting: docker-compose -f docker-compose.prod.yml logs -f
+7. For closing project: docker-compose -f docker-compose.prod.yml down -v
+8. For running commands in the local containers: docker-compose -f docker-compose exec [container name] [command]
+
+### **Routes &amp; Endpoints | Production environment**
 
 1. Angular Frontend: localhost
 2. Django Rest Framework: localhost/api

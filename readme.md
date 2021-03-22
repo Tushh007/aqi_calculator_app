@@ -92,3 +92,29 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 9. Click on add a new server and fill the following details
 10. General Tab || Name: database
 11. Connection Tab || Host: database | username: app | password: app
+
+## Application Screenshots
+
+1. Login Page | dev-env: localhost:4201/login
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login-page.PNG)
+
+2. Register Page | dev-env: localhost:4201/register
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.PNG)
+
+3. AQI JSON Page | dev-env: localhost:4201/json/aq-index.json
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi-json-page.PNG)
+
+4. Home Page | dev-env: localhost:4201 (post logging in)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/home-page.PNG)
+
+5. Calculator Page | dev-env: localhost:4201/aq-index
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-page.PNG)
+
+6. Calculator History Page | dev-env: localhost:4201/history
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-history-page.PNG)
+
+7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.PNG)
+
+8. PostgreSQL Database page | dev-env: http://localhost:5050/
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.PNG)

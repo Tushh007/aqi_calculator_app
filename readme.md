@@ -28,10 +28,10 @@ This web application is completely responsive.
 ## AQI Calculation
 
 The project uses below formulas for calculation AQI and Pollutant Concentration:
-![](https://github.com/Tushh007/bookart-app/blob/master/screenshots/aqi_formulas.png)
+![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi_formula.PNG)
 
 The project uses the AQI Breakpoint Table shown in the below image:
-![](https://github.com/Tushh007/bookart-app/blob/master/screenshots/aqi_breakpoint_table.png)
+![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi_breakpoint_table.PNG)
 
 source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 

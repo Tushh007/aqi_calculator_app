@@ -33,7 +33,7 @@ The project uses below formulas for calculation AQI and Pollutant Concentration:
 The project uses the AQI Breakpoint Table shown in the below image:
 ![](https://github.com/Tushh007/bookart-app/blob/master/screenshots/aqi_breakpoint_table.png)
 
-source/reference: ![https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html](https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html)
+source/reference: (https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html)
 
 ## **Requirements for running the project in local machine:**
 

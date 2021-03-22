@@ -10,7 +10,7 @@ This project has following features:
 4. All AQI calculation data viewer in json format
 5. Cross device responsiveness
 
-This project has API endpoints for login, register, aqi calculator and api calculator data built in Angular 8 i.e. single page application with material design principles and Django Rest Framework with PostgreSQL.
+This project has API endpoints for login, register, aqi calculator and api calculator data built in Angular i.e. single page application with material design principles and Django Rest Framework with PostgreSQL.
 
 This application has validations for login, register as well as search and sort functionality for aqi calculator data view along with a separate json data view for all aqi_calculator data.
 
@@ -18,12 +18,11 @@ This web application is completely responsive.
 
 ## **Technologies used:**
 
-1. Python 3,
-2. Angular 8,
-3. Django Rest Framework,
-4. PostgreSQL
-5. Docker
-6. Nginx
+1. Angular,
+2. Django Rest Framework,
+3. PostgreSQL
+4. Docker
+5. Nginx
 
 ## AQI Calculation
 
@@ -95,26 +94,26 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 
 ## Application Screenshots
 
-1. Login Page | dev-env: localhost:4201/login
+1. Login Page | dev-env: localhost:4201/login | prod-env: localhost/login
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login-page.png)
 
-2. Register Page | dev-env: localhost:4201/register
+2. Register Page | dev-env: localhost:4201/register | prod-env: localhost/register
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.png)
 
-3. AQI JSON Page | dev-env: localhost:4201/json/aq-index.json
+3. AQI JSON Page | dev-env: localhost:4201/json/aq-index.json | prod-env: localhost/json/aq-index.json
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi-json-page.png)
 
-4. Home Page | dev-env: localhost:4201 (post logging in)
+4. Home Page | dev-env: localhost:4201 | prod-env: localhost (post logging in)
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/home-page.png)
 
-5. Calculator Page | dev-env: localhost:4201/aq-index
+5. Calculator Page | dev-env: localhost:4201/aq-index | prod-end: localhost/aq-index
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-page.png)
 
-6. Calculator History Page | dev-env: localhost:4201/history
+6. Calculator History Page | dev-env: localhost:4201/history | prod-end: localhost/history
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-history-page.png)
 
-7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/
+7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/ | prod-end: localhost/api/v1/admin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.png)
 
-8. PostgreSQL Database page | dev-env: http://localhost:5050/
+8. PostgreSQL Database page | dev-env: http://localhost:5050/ | pro-end: localhost/pgadmin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.png)

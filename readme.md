@@ -53,13 +53,13 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 
 ### **Routes &amp; Endpoints | Development environment**
 
-1. Angular Frontend: localhost:4201
-2. Django Rest Framework Backend: localhost:8000
-3. Admin Dashboard: localhost:8000/api/v1/admin
-4. Authentication endpoint: localhost:8000/api/v1/auth_token
-5. User endpoint: localhost:8000/api/v1/aqi_calculator/users`
-6. AQI_Calculator endpoint: localhost:8000/api/v1/aqi_calculator/history
-7. Postgres: localhost:5050
+1. Angular Frontend: http://localhost:4201
+2. Django Rest Framework Backend: http://localhost:8000
+3. Admin Dashboard: http://localhost:8000/api/v1/admin
+4. Authentication endpoint: http://localhost:8000/api/v1/auth_token
+5. User endpoint: http://localhost:8000/api/v1/aqi_calculator/users`
+6. AQI_Calculator endpoint: http://localhost:8000/api/v1/aqi_calculator/history
+7. Postgres: http://localhost:5050
 8. Login details | username: [admin@aqi.com](mailto:admin@aqi.com) | password: admin
 9. Click on add a new server and fill the following details
 10. General Tab || Name: database
@@ -80,13 +80,13 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 
 ### **Routes &amp; Endpoints | Production environment**
 
-1. Angular Frontend: localhost
-2. Django Rest Framework: localhost/api
-3. Admin Dashboard: localhost/api/v1/admin
-4. Authentication endpoint: localhost/api/v1/auth_token
-5. User endpoint: localhost/api/v1/aqi_calculator/users
-6. AQI_Calculator endpoint: localhost/api/v1/aqi_calculator/history
-7. Postgres: localhost/pgadmin
+1. Angular Frontend: http://localhost
+2. Django Rest Framework: http://localhost/api
+3. Admin Dashboard: http://localhost/api/v1/admin
+4. Authentication endpoint: http://localhost/api/v1/auth_token
+5. User endpoint: http://localhost/api/v1/aqi_calculator/users
+6. AQI_Calculator endpoint: http://localhost/api/v1/aqi_calculator/history
+7. Postgres: http://localhost/pgadmin
 8. Login details | username: [admin@aqi.com](mailto:admin@aqi.com) | password: admin
 9. Click on add a new server and fill the following details
 10. General Tab || Name: database
@@ -94,26 +94,26 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 
 ## Application Screenshots
 
-1. Login Page | dev-env: localhost:4201/login | prod-env: localhost/login
+1. Login Page | dev-env: http://localhost:4201/login | prod-env: http://localhost/login
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login-page.png)
 
-2. Register Page | dev-env: localhost:4201/register | prod-env: localhost/register
+2. Register Page | dev-env: http://localhost:4201/register | prod-env: http://localhost/register
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.png)
 
-3. AQI JSON Page | dev-env: localhost:4201/json/aq-index.json | prod-env: localhost/json/aq-index.json
+3. AQI JSON Page | dev-env: http://localhost:4201/json/aq-index.json | prod-env: http://localhost/json/aq-index.json
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi-json-page.png)
 
-4. Home Page | dev-env: localhost:4201 | prod-env: localhost (post logging in)
+4. Home Page | dev-env: http://localhost:4201 | prod-env: http://localhost (post logging in)
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/home-page.png)
 
-5. Calculator Page | dev-env: localhost:4201/aq-index | prod-end: localhost/aq-index
+5. Calculator Page | dev-env: http://localhost:4201/aq-index | prod-end: http://localhost/aq-index
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-page.png)
 
-6. Calculator History Page | dev-env: localhost:4201/history | prod-end: localhost/history
+6. Calculator History Page | dev-env: http://localhost:4201/history | prod-end: http://localhost/history
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-history-page.png)
 
-7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/ | prod-end: localhost/api/v1/admin
+7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/ | prod-end: http://localhost/api/v1/admin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.png)
 
-8. PostgreSQL Database page | dev-env: http://localhost:5050/ | pro-end: localhost/pgadmin
+8. PostgreSQL Database page | dev-env: http://localhost:5050/ | pro-end: http://localhost/pgadmin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.png)

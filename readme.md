@@ -96,25 +96,25 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 ## Application Screenshots
 
 1. Login Page | dev-env: localhost:4201/login
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login_page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login-page.png)
 
 2. Register Page | dev-env: localhost:4201/register
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.png)
 
 3. AQI JSON Page | dev-env: localhost:4201/json/aq-index.json
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi-json-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi-json-page.png)
 
 4. Home Page | dev-env: localhost:4201 (post logging in)
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/home-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/home-page.png)
 
 5. Calculator Page | dev-env: localhost:4201/aq-index
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-page.png)
 
 6. Calculator History Page | dev-env: localhost:4201/history
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-history-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/calculator-history-page.png)
 
 7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.png)
 
 8. PostgreSQL Database page | dev-env: http://localhost:5050/
-   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.png)

@@ -96,7 +96,7 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 ## Application Screenshots
 
 1. Login Page | dev-env: localhost:4201/login
-![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/aqi_breakpoint_table.PNG)
+   ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/login_page.PNG)
 
 2. Register Page | dev-env: localhost:4201/register
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/register-page.PNG)

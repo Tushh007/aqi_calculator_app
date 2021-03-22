@@ -115,5 +115,5 @@ source/reference: https://blue.cs.sonoma.edu/cs115/F17/proj/p1/cs115_p1.html
 7. Admin Dashboard Page | dev-env: http://localhost:8000/api/v1/admin/ | prod-end: http://localhost/api/v1/admin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/admin-dashboard-page.png)
 
-8. PostgreSQL Database page | dev-env: http://localhost:5050/ | pro-end: http://localhost/pgadmin
+8. PostgreSQL Database page | dev-env: http://localhost:5050/ | prod-end: http://localhost/pgadmin
    ![](https://github.com/Tushh007/aqi_calculator_app/blob/master/screenshots/postgres-page.png)

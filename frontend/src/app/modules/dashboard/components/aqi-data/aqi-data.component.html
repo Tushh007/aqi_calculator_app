@@ -1,0 +1,45 @@
+<div class="table-top-panel">
+    <mat-form-field>
+        <mat-label>Search</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
+    </mat-form-field>
+</div>
+<div class="table">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <ng-container matColumnDef="created">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Created </th>
+            <td mat-cell *matCellDef="let element">{{element.created | date: 'MMM d, y, h:mm:ss a'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="pollutant">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Pollutant </th>
+            <td mat-cell *matCellDef="let element"> {{element.pollutant}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="aqi">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> AQI </th>
+            <td mat-cell *matCellDef="let element"> {{element.aqi | number: '.1'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="concentration">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Concentration </th>
+            <td mat-cell *matCellDef="let element"> {{element.concentration | number: '.1'}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="aqi_category">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> AQI Category</th>
+            <td mat-cell *matCellDef="let element"> {{element.aqi_category}} </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[4, 8, 12]" showFirstLastButtons></mat-paginator>
+</div>

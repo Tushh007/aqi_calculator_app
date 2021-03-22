@@ -1,0 +1,28 @@
+/* Structure */
+.mat-row:hover {
+  background-color: #fafafa;
+}
+
+table {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.table-top-panel {
+  width: 80%;
+  /* background-color: tomato; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-paginator {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 0px; */
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}

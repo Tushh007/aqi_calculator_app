@@ -1,0 +1,45 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  font-family: "Karla", sans-serif;
+  width: 200px;
+  background-color: #587899; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to bottom right,
+    #587899,
+    #095a9c
+  ); /* Standard syntax (must be last) */
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: #587899; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to bottom right,
+    #587899,
+    #095a9c
+  ); /* Standard syntax (must be last) */
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #587899; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to bottom right,
+    #587899,
+    #095a9c
+  ); /* Standard syntax (must be last) */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+router-outlet {
+  z-index: 1;
+  position: relative;
+}

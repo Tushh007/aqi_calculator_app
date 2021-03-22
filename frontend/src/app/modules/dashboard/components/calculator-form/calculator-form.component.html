@@ -1,0 +1,70 @@
+<div class="calculator-form">
+    <p>Please use AQI Breakpoint table show at the bottom of the page as a reference for AQI/Concentration value range
+    </p>
+    <form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <mat-label for="pollutant">Pollutant</mat-label>
+            <select [(ngModel)]="aqiData.pollutant" name="pollutant" formControlName="pollutant" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.pollutant.errors }">
+                <option *ngFor="let pollutant of pollutants" [value]="pollutant.value">{{pollutant.viewValue}}</option>
+            </select>
+            <div *ngIf="submitted && f.pollutant.errors" class="invalid-feedback">
+                <mat-error *ngIf="f.pollutant.hasError('required')">
+                    Pollutant is required
+                </mat-error>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <mat-label for="aqi">AQI</mat-label>
+            <input matInput type="text" formControlName="aqi" class="form-control" [(ngModel)]="aqiData.aqi"
+                [ngClass]="{ 'is-invalid': submitted && f.aqi.errors }" />
+            <div *ngIf="submitted && f.aqi.errors" class="invalid-feedback">
+                <mat-error *ngIf="f.aqi.hasError('required')">
+                    AQI is required
+                </mat-error>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <mat-label for="concentration">Concentration</mat-label>
+            <input matInput type="text" formControlName="concentration" class="form-control"
+                [(ngModel)]="aqiData.concentration" [ngClass]="{ 'is-invalid': submitted && f.concentration.errors }" />
+            <div *ngIf="submitted && f.concentration.errors" class="invalid-feedback">
+                <mat-error *ngIf="f.concentration.hasError('required')">
+                    Concentration is required
+                </mat-error>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button class="form-group-button">
+                Calculate
+            </button>
+            <a class="form-group-button" (click)="reset()">Reset</a>
+        </div>
+    </form>
+    <div>
+        <div class="form-group">
+            <mat-label for="aqi_category">AQI Category</mat-label>
+            <input matInput type="text" class="form-control" [(ngModel)]="aqiData.aqi_category" disabled />
+        </div>
+        <div class="form-group">
+            <mat-label for="sensitive_groups">Health Effects Statements</mat-label>
+            <textarea matInput type="text" class="form-control" [(ngModel)]="aqiData.sensitive_groups"
+                disabled></textarea>
+        </div>
+        <div class="form-group">
+            <mat-label for="health_effects_statements">Health Effects Statements</mat-label>
+            <textarea matInput type="text" class="form-control" [(ngModel)]="aqiData.health_effects_statements"
+                disabled></textarea>
+        </div>
+        <div class="form-group">
+            <mat-label for="cautionary_statements">Cautionary Statements</mat-label>
+            <textarea matInput type="text" class="form-control" [(ngModel)]="aqiData.cautionary_statements"
+                disabled></textarea>
+        </div>
+    </div>
+    <img src="assets/images/aqi_breakpoint_table.png" alt="AQI Breakpoint Table" class="responsive" width="600"
+        height="400">
+</div>

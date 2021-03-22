@@ -1,0 +1,53 @@
+<mat-sidenav-container class="sidenav-container" *ngIf="currentUser; else noUser">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>AQI Calculator</mat-toolbar>
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="margin-right: 10px; margin-left: 20px">home
+        </mat-icon>Home
+      </a>
+      <a mat-list-item routerLink="aq-index">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="margin-right: 10px; margin-left: 20px">
+          dialpad
+        </mat-icon>Calculator
+      </a>
+      <a mat-list-item routerLink="aq-index/history">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="margin-right: 10px; margin-left: 20px">
+          assessment
+        </mat-icon>Data
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+      <span class="spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+        style="color: black; margin-left: 10px">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item disabled>
+          <span>{{ currentUser.firstName }} {{ currentUser.lastName }}</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-alert></app-alert>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- main app container -->
+<ng-template #noUser>
+  <app-alert></app-alert>
+  <router-outlet></router-outlet>
+</ng-template>
